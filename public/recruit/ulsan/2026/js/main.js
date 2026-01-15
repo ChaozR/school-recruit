@@ -93,7 +93,7 @@ function renderSchools(regionId, schools) {
             <th rowspan="2">학교명</th>
             <th rowspan="2">학년</th>
             <th rowspan="2">학급수</th>
-            <th rowspan="2">학생수</th>
+            <th rowspan="2">학급별<br>학생수</th>
             <th rowspan="2">학급별<br>차시</th>
             <th rowspan="2">총차시</th>
             <th rowspan="2">수업기간</th>
