@@ -1,0 +1,702 @@
+{
+  "jung-gu": [
+    {
+      "name": "다운",
+      "grade": "3~6",
+      "classes": 2,
+      "students": 30,
+      "classSessions": 14,
+      "totalSessions": 28,
+      "dateRange": [
+        "05.14~07.02",
+        "10.08~11.19"
+      ],
+      "support": false,
+      "schedule": {
+        "mon": "-",
+        "tue": "-",
+        "wed": "-",
+        "thu": "5~6",
+        "fri": "-"
+      }
+    },
+    {
+      "name": "명정",
+      "grade": "1~6",
+      "classes": 24,
+      "students": 455,
+      "classSessions": 12,
+      "totalSessions": 288,
+      "dateRange": [
+        "04.06~07.01"
+      ],
+      "support": false,
+      "schedule": {
+        "mon": "1~4",
+        "tue": "1~4",
+        "wed": "1~5",
+        "thu": "1~4",
+        "fri": "1~4"
+      }
+    },
+    {
+      "name": "복산",
+      "grade": "1,2",
+      "classes": 16,
+      "students": 345,
+      "classSessions": 24,
+      "totalSessions": 384,
+      "dateRange": [
+        "04.20~07.10",
+        "08.24~12.04"
+      ],
+      "support": true,
+      "schedule": {
+        "mon": "1~3",
+        "tue": "1~3",
+        "wed": "1~3",
+        "thu": "1~4",
+        "fri": "1~3"
+      }
+    },
+    {
+      "name": "외솔",
+      "grade": "4",
+      "classes": 5,
+      "students": 125,
+      "classSessions": 12,
+      "totalSessions": 60,
+      "dateRange": [
+        "03.31~05.12"
+      ],
+      "support": true,
+      "schedule": {
+        "mon": "1~4",
+        "tue": "1~4",
+        "wed": "1~2",
+        "thu": "-",
+        "fri": "-"
+      }
+    },
+    {
+      "name": "함월",
+      "grade": "2~5",
+      "classes": 9,
+      "students": 180,
+      "classSessions": 12,
+      "totalSessions": 108,
+      "dateRange": [
+        "04.07~07.16"
+      ],
+      "support": true,
+      "schedule": {
+        "mon": "-",
+        "tue": "1~4",
+        "wed": "-",
+        "thu": "1~5",
+        "fri": "-"
+      }
+    }
+  ],
+  "nam-gu": [
+    {
+      "name": "개운",
+      "grade": "1,2,5,6",
+      "classes": 13,
+      "students": 280,
+      "classSessions": 24,
+      "totalSessions": 312,
+      "dateRange": [
+        "04.01~07.07",
+        "09.02~12.01"
+      ],
+      "support": true,
+      "caution": true,
+      "note": "보조강사는 표의 일정 뿐만 아니라 목요일 3,4학년 대상 1~6교시도 출강해야 하며, 총 456차시를 출강해야 함",
+      "schedule": {
+        "mon": "1~4",
+        "tue": "1~4",
+        "wed": "1~5",
+        "thu": "-",
+        "fri": "-"
+      }
+    },
+    {
+      "name": "대현",
+      "grade": "1,2",
+      "classes": 11,
+      "students": 240,
+      "classSessions": 12,
+      "totalSessions": 132,
+      "dateRange": [
+        "09.01~12.04"
+      ],
+      "support": true,
+      "schedule": {
+        "mon": "-",
+        "tue": "1~3",
+        "wed": "1~3",
+        "thu": "1~3",
+        "fri": "1~2"
+      }
+    },
+    {
+      "name": "도산",
+      "grade": "1~5",
+      "classes": 15,
+      "students": 295,
+      "classSessions": 12,
+      "totalSessions": 180,
+      "dateRange": [
+        "03.30~06.29"
+      ],
+      "support": false,
+      "schedule": {
+        "mon": "2~4",
+        "tue": "2~4",
+        "wed": "2~4",
+        "thu": "2~4",
+        "fri": "2~4"
+      }
+    },
+    {
+      "name": "신복(1)",
+      "grade": "1,3,5",
+      "classes": 7,
+      "students": 165,
+      "classSessions": "-",
+      "totalSessions": 108,
+      "dateRange": [
+        "05.26~06.15",
+        "08.31~09.17"
+      ],
+      "support": true,
+      "caution": true,
+      "note": "1, 5학년 각 12차시, 3학년 24차시 수강",
+      "schedule": {
+        "mon": "1~6",
+        "tue": "1~4",
+        "wed": "1~4",
+        "thu": "1~4",
+        "fri": "-"
+      }
+    },
+    {
+      "name": "신복(2)",
+      "grade": "2,4,6",
+      "classes": 8,
+      "students": 187,
+      "classSessions": "-",
+      "totalSessions": 132,
+      "dateRange": [
+        "05.26~06.15",
+        "08.31~09.18"
+      ],
+      "support": true,
+      "caution": true,
+      "note": "2, 6학년 각 12차시, 4학년 24차시 수강",
+      "schedule": {
+        "mon": "1~6",
+        "tue": "1~4",
+        "wed": "1~4",
+        "thu": "1~6",
+        "fri": "1~2"
+      }
+    },
+    {
+      "name": "용연(1)",
+      "grade": "1~6",
+      "classes": 21,
+      "students": 482,
+      "classSessions": 12,
+      "totalSessions": 252,
+      "dateRange": [
+        "05.11~07.01",
+        "09.04~10.23"
+      ],
+      "support": true,
+      "schedule": {
+        "mon": "2~5",
+        "tue": "1~4",
+        "wed": "1~5",
+        "thu": "1~4",
+        "fri": "1~4"
+      }
+    },
+    {
+      "name": "용연(2)",
+      "grade": "1~6",
+      "classes": 21,
+      "students": 482,
+      "classSessions": 12,
+      "totalSessions": 252,
+      "dateRange": [
+        "05.11~07.01",
+        "09.04~10.23"
+      ],
+      "support": true,
+      "schedule": {
+        "mon": "2~5",
+        "tue": "1~4",
+        "wed": "1~5",
+        "thu": "1~4",
+        "fri": "1~4"
+      }
+    },
+    {
+      "name": "울산중앙",
+      "grade": "5,6",
+      "classes": 4,
+      "students": 72,
+      "classSessions": 24,
+      "totalSessions": 96,
+      "dateRange": [
+        "04.02~07.16",
+        "08.27~12.10"
+      ],
+      "support": false,
+      "schedule": {
+        "mon": "-",
+        "tue": "-",
+        "wed": "-",
+        "thu": "1~4",
+        "fri": "-"
+      }
+    },
+    {
+      "name": "월봉",
+      "grade": "3,4",
+      "classes": 9,
+      "students": 227,
+      "classSessions": 12,
+      "totalSessions": 108,
+      "dateRange": [
+        "09.04~12.04"
+      ],
+      "support": true,
+      "schedule": {
+        "mon": "-",
+        "tue": "1~4",
+        "wed": "-",
+        "thu": "-",
+        "fri": "1~5"
+      }
+    },
+    {
+      "name": "월평",
+      "grade": "6",
+      "classes": 1,
+      "students": 24,
+      "classSessions": 24,
+      "totalSessions": 24,
+      "dateRange": [
+        "03.30~06.22"
+      ],
+      "support": true,
+      "caution": true,
+      "note": "수업 요일이 변경될 가능성이 있음",
+      "schedule": {
+        "mon": "3~4",
+        "tue": "-",
+        "wed": "-",
+        "thu": "-",
+        "fri": "-"
+      }
+    },
+    {
+      "name": "청솔",
+      "grade": "3~6",
+      "classes": 19,
+      "students": 456,
+      "classSessions": 14,
+      "totalSessions": 266,
+      "dateRange": [
+        "03.31~07.08"
+      ],
+      "support": true,
+      "schedule": {
+        "mon": "-",
+        "tue": "1~4",
+        "wed": "1~5",
+        "thu": "1~5",
+        "fri": "1~5"
+      }
+    }
+  ],
+  "dong-gu": [
+    {
+      "name": "전하",
+      "grade": "5",
+      "classes": 4,
+      "students": 145,
+      "classSessions": 20,
+      "totalSessions": 80,
+      "dateRange": [
+        "09.29~12.11"
+      ],
+      "support": true,
+      "caution": true,
+      "note": "보조강사는 표에 있는 일정 뿐만 아니라 화요일 1~6교시도 출강해야하며, 총 140차시를 출강해야 함",
+      "schedule": {
+        "mon": "-",
+        "tue": "-",
+        "wed": "-",
+        "thu": "1~4",
+        "fri": "1~4"
+      }
+    },
+    {
+      "name": "화암",
+      "grade": "1,2",
+      "classes": 6,
+      "students": 115,
+      "classSessions": 6,
+      "totalSessions": 36,
+      "dateRange": [
+        "04.07~05.19"
+      ],
+      "support": false,
+      "schedule": {
+        "mon": "-",
+        "tue": "1~3",
+        "wed": "1~3",
+        "thu": "-",
+        "fri": "-"
+      }
+    },
+    {
+      "name": "화진",
+      "grade": "1~6",
+      "classes": 38,
+      "students": 873,
+      "classSessions": 12,
+      "totalSessions": 456,
+      "dateRange": [
+        "03.30~07.17",
+        "08.25~12.11"
+      ],
+      "support": true,
+      "caution": true,
+      "note": "1학기는 표대로 수업 진행, 2학기는 수요일과 목요일이 기존 1~4교시에서 1~3교시로 변경",
+      "schedule": {
+        "mon": "2~5",
+        "tue": "1~4",
+        "wed": "1~4",
+        "thu": "1~4",
+        "fri": "1~4"
+      }
+    }
+  ],
+  "buk-gu": [
+    {
+      "name": "매산",
+      "grade": "5",
+      "classes": 6,
+      "students": 146,
+      "classSessions": 12,
+      "totalSessions": 72,
+      "dateRange": [
+        "04.16~05.29",
+        "10.15~11.20"
+      ],
+      "support": true,
+      "schedule": {
+        "mon": "-",
+        "tue": "-",
+        "wed": "-",
+        "thu": "2~4",
+        "fri": "2~4"
+      }
+    },
+    {
+      "name": "연암",
+      "grade": "1~6",
+      "classes": 16,
+      "students": 336,
+      "classSessions": 20,
+      "totalSessions": 320,
+      "dateRange": [
+        "04.06~06.22",
+        "08.31~11.12"
+      ],
+      "support": true,
+      "schedule": {
+        "mon": "1~3",
+        "tue": "1~3",
+        "wed": "1~5",
+        "thu": "1~5",
+        "fri": "-"
+      }
+    },
+    {
+      "name": "농서",
+      "grade": "2,4,5",
+      "classes": 14,
+      "students": 325,
+      "classSessions": 12,
+      "totalSessions": 168,
+      "dateRange": [
+        "04월~06월",
+        "09월~11월"
+      ],
+      "support": true,
+      "caution": true,
+      "note": "2학기는 표대로 진행, 1학기는 목요일 1~4교시만 수업 진행",
+      "schedule": {
+        "mon": "-",
+        "tue": "1~5",
+        "wed": "1~5",
+        "thu": "-",
+        "fri": "-"
+      }
+    }
+  ],
+  "ulju-gun": [
+    {
+      "name": "구영",
+      "grade": "3~6",
+      "classes": 24,
+      "students": 602,
+      "classSessions": 12,
+      "totalSessions": 288,
+      "dateRange": [
+        "04.01~06.30",
+        "09.01~11.26"
+      ],
+      "support": true,
+      "caution": true,
+      "note": "2월 초 학사 일정이 최종 확정되므로 수업 일정에 변경 가능성이 있으며, 수요일과 목요일의 수업일정이 서로 바뀔 수 있음",
+      "schedule": {
+        "mon": "-",
+        "tue": "1~5",
+        "wed": "1~3",
+        "thu": "1~4",
+        "fri": "-"
+      }
+    },
+    {
+      "name": "무거",
+      "grade": "3,4",
+      "classes": 13,
+      "students": 303,
+      "classSessions": 20,
+      "totalSessions": 260,
+      "dateRange": [
+        "04.07~06.24",
+        "09.08~11.20"
+      ],
+      "support": true,
+      "schedule": {
+        "mon": "-",
+        "tue": "2~4",
+        "wed": "2~4",
+        "thu": "2~4",
+        "fri": "1~4"
+      }
+    },
+    {
+      "name": "삼남",
+      "grade": "1~4",
+      "classes": 13,
+      "students": 239,
+      "classSessions": 24,
+      "totalSessions": 312,
+      "dateRange": [
+        "04.06~07.06",
+        "09.07~12.11"
+      ],
+      "support": false,
+      "schedule": {
+        "mon": "1~3",
+        "tue": "1~3",
+        "wed": "1~3",
+        "thu": "1~2",
+        "fri": "1~2"
+      }
+    },
+    {
+      "name": "서사",
+      "grade": "1~6",
+      "classes": 6,
+      "students": 120,
+      "classSessions": 16,
+      "totalSessions": 96,
+      "dateRange": [
+        "04.14~07.09",
+        "09.01~10.01"
+      ],
+      "support": true,
+      "schedule": {
+        "mon": "-",
+        "tue": "2~5",
+        "wed": "-",
+        "thu": "2~4",
+        "fri": "-"
+      }
+    },
+    {
+      "name": "서생",
+      "grade": "1,2",
+      "classes": 2,
+      "students": 40,
+      "classSessions": 24,
+      "totalSessions": 48,
+      "dateRange": [
+        "04.08~07.01"
+      ],
+      "support": true,
+      "schedule": {
+        "mon": "-",
+        "tue": "-",
+        "wed": "1~2",
+        "thu": "-",
+        "fri": "1~2"
+      }
+    },
+    {
+      "name": "언양",
+      "grade": "3~6",
+      "classes": 22,
+      "students": 506,
+      "classSessions": 16,
+      "totalSessions": 352,
+      "dateRange": [
+        "08.28~12.28"
+      ],
+      "support": true,
+      "schedule": {
+        "mon": "1~5",
+        "tue": "1~5",
+        "wed": "1~4",
+        "thu": "1~4",
+        "fri": "1~4"
+      }
+    },
+    {
+      "name": "영화",
+      "grade": "3,4",
+      "classes": 9,
+      "students": 198,
+      "classSessions": 12,
+      "totalSessions": 108,
+      "dateRange": [
+        "04.14~07.08"
+      ],
+      "support": true,
+      "schedule": {
+        "mon": "-",
+        "tue": "1~5",
+        "wed": "1~4",
+        "thu": "-",
+        "fri": "-"
+      }
+    },
+    {
+      "name": "온남",
+      "grade": "1~6",
+      "classes": 21,
+      "students": 488,
+      "classSessions": 12,
+      "totalSessions": 252,
+      "dateRange": [
+        "04.01~07.06",
+        "08.31~11.30"
+      ],
+      "support": true,
+      "caution": true,
+      "note": "2학기는 표대로 진행, 1학기는 월요일 1~5교시, 화요일 1~4교시만 진행하며, 보조강사의 경우 이에 더해 1학기는 목요일, 금요일에 각 1~6교시도 추가로 출강하여 총 396차시 출강",
+      "schedule": {
+        "mon": "1~5",
+        "tue": "2~6",
+        "wed": "2~3",
+        "thu": "-",
+        "fri": "-"
+      }
+    },
+    {
+      "name": "울주명지",
+      "grade": "1~4",
+      "classes": 14,
+      "students": 270,
+      "classSessions": 20,
+      "totalSessions": 280,
+      "dateRange": [
+        "04.07~07.15",
+        "09.09~12.23"
+      ],
+      "support": false,
+      "caution": true,
+      "note": "수요일 1학년 대상 수업은 3교시 이후 점심시간이 있어 화요일과 수요일 수업 종료시간이 다름",
+      "schedule": {
+        "mon": "-",
+        "tue": "1~4",
+        "wed": "1~4",
+        "thu": "1~3",
+        "fri": "1~3"
+      }
+    },
+    {
+      "name": "중남",
+      "grade": "1~6",
+      "classes": 9,
+      "students": 170,
+      "classSessions": 14,
+      "totalSessions": 126,
+      "dateRange": [
+        "04.01~07.15"
+      ],
+      "support": false,
+      "schedule": {
+        "mon": "1~3",
+        "tue": "-",
+        "wed": "1~6",
+        "thu": "-",
+        "fri": "-"
+      }
+    },
+    {
+      "name": "호연",
+      "grade": "3,4",
+      "classes": 7,
+      "students": 162,
+      "classSessions": 20,
+      "totalSessions": 140,
+      "dateRange": [
+        "04.02~06.05",
+        "08.27~11.20"
+      ],
+      "support": true,
+      "schedule": {
+        "mon": "-",
+        "tue": "-",
+        "wed": "-",
+        "thu": "1~4",
+        "fri": "1~3"
+      }
+    }
+  ],
+  "support": [
+    {
+      "name": "야음",
+      "grade": "4~6",
+      "classes": 6,
+      "students": 120,
+      "classSessions": 24,
+      "totalSessions": 144,
+      "dateRange": [
+        "04.07~07.07",
+        "09.01~11.17"
+      ],
+      "support": true,
+      "caution": true,
+      "note": "보조강사만 신청 가능한 학교",
+      "schedule": {
+        "mon": "-",
+        "tue": "1~6",
+        "wed": "-",
+        "thu": "-",
+        "fri": "-"
+      }
+    }
+  ]
+}
