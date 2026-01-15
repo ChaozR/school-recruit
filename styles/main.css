@@ -1,0 +1,692 @@
+/* Main CSS */
+:root {
+  /* Brand Colors */
+  --color-primary: #034EA2;
+  /* R3 G78 B162 */
+  --color-black: #000000;
+  /* R0 G0 B0 */
+  --color-grey: #D2D2CA;
+  /* R210 G210 B202 */
+
+  /* Functional Colors */
+  --color-bg-light: #F8F9FA;
+  --color-text-main: #333333;
+  --color-text-sub: #666666;
+  --color-white: #FFFFFF;
+  --color-accent: #E8F0FE;
+  /* Very light blue for backgrounds */
+
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 0.8rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 3rem;
+  --spacing-xl: 4rem;
+
+  /* Layout */
+  --container-max-width: 1024px;
+  --border-radius-sm: 8px;
+  --border-radius-md: 12px;
+  --border-radius-lg: 20px;
+}
+
+.caution-list {
+  list-style: none;
+  padding: 0;
+}
+
+.caution-list li {
+  margin-bottom: 0.8rem;
+  padding-left: 1rem;
+  position: relative;
+  line-height: 1.6;
+}
+
+.caution-list li::before {
+  content: '•';
+  color: var(--color-primary);
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+/* Reset & Base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  color: var(--color-black);
+  line-height: 1.5;
+  background-color: var(--color-white);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.2s ease;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Typography Helpers */
+.text-highlight {
+  color: var(--color-primary);
+  position: relative;
+  display: inline-block;
+}
+
+.section-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: var(--spacing-md);
+  text-align: center;
+  color: var(--color-black);
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  padding: var(--spacing-xl) 0;
+  background: linear-gradient(135deg, #f0f4f8 0%, #ffffff 100%);
+  overflow: hidden;
+  text-align: center;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(circle, var(--color-grey) 0%, transparent 70%);
+  opacity: 0.1;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.4rem 1.2rem;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  font-weight: 600;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.3;
+  margin-bottom: var(--spacing-md);
+  color: var(--color-black);
+  word-break: keep-all;
+}
+
+.hero-subtitle {
+  font-size: 1.125rem;
+  color: var(--color-text-sub);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: var(--spacing-md);
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem 1.8rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: var(--border-radius-sm);
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  box-shadow: 0 4px 6px rgba(3, 78, 162, 0.2);
+}
+
+.btn-primary:hover {
+  background-color: #023a7a;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(3, 78, 162, 0.3);
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
+}
+
+.btn-outline:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+/* School List Section */
+.school-list-section {
+  background-color: var(--color-accent);
+}
+
+.region-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 0 auto;
+}
+
+.region-block {
+  background: white;
+  border: 1px solid var(--color-grey);
+  border-radius: var(--border-radius-md);
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+.region-title {
+  font-size: 1.3rem;
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.school-list-content {
+  color: var(--color-text-main);
+}
+
+.placeholder-text {
+  color: var(--color-text-sub);
+  font-style: italic;
+  padding: 1rem 0;
+}
+
+/* School Guide (Legend) */
+.school-guide {
+  background-color: white;
+  border: 1px solid var(--color-grey);
+  border-radius: var(--border-radius-md);
+  padding: 2rem;
+  margin-bottom: 3rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+.guide-title {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: var(--color-text-main);
+  font-weight: 700;
+}
+
+.guide-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.guide-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.guide-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 1rem;
+}
+
+.color-box {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  text-align: center;
+  line-height: 22px;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.color-box.caution {
+  background-color: #ffebee;
+  border-color: #ffcdd2;
+}
+
+.color-box.support {
+  color: var(--color-primary);
+  background-color: white;
+  border-color: #cee0f5;
+}
+
+.color-box.period {
+  background-color: #f0f7ff;
+  color: var(--color-text-main);
+  border-color: #d0e1f5;
+  font-weight: normal;
+  font-size: 0.75rem;
+  width: auto;
+  padding: 0 8px;
+}
+
+.highlight-red {
+  color: #c62828;
+  font-weight: 700;
+}
+
+/* Force guide table to not be too wide if possible */
+.guide-table {
+  margin-top: 0 !important;
+  box-shadow: none !important;
+  border: 1px solid #eee;
+}
+
+/* School Data Table */
+.school-table-container {
+  overflow-x: auto;
+  margin-top: 1rem;
+  border: 1px solid #eee;
+  border-radius: var(--border-radius-sm);
+}
+
+.school-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  text-align: center;
+  white-space: nowrap;
+  /* Prevent wrapping for data cells */
+}
+
+.school-table th {
+  background-color: #f7f9fa;
+  font-weight: 600;
+  padding: 0.4rem 0.4rem;
+  border: 1px solid #e1e4e8;
+  /* Full border including vertical */
+  color: #444;
+}
+
+.school-table td {
+  padding: 0.4rem 0.4rem;
+  border: 1px solid #e1e4e8;
+  /* Full border including vertical */
+}
+
+/* Make School Name Sticky on Mobile */
+.school-table thead tr:first-child th:first-child,
+.school-table td:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 10;
+  font-weight: 600;
+  color: var(--color-primary);
+  border-right: 2px solid #e1e4e8;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Specific background for sticky header */
+.school-table thead tr:first-child th:first-child {
+  background-color: #f7f9fa;
+  /* Match header bg */
+  z-index: 11;
+  /* Higher than body sticky */
+}
+
+/* Specific background for sticky body cell */
+.school-table td:first-child {
+  background-color: white;
+}
+
+.school-table td.school-caution {
+  background-color: #ffebee !important;
+  /* Pink background */
+  color: #c62828 !important;
+  /* Red text */
+  font-weight: 700;
+}
+
+.school-table tr:hover td {
+  background-color: #f8fcfd;
+}
+
+/* Group Headers */
+.group-header {
+  border-bottom: 1px solid #ddd !important;
+  background-color: #f1f3f5 !important;
+}
+
+/* Day Headers (Mon-Fri) - Force Equal Width */
+.school-table thead tr:nth-last-child(1) th {
+  width: 60px;
+  min-width: 60px;
+}
+
+/* Specific Column Styles */
+.col-period {
+  color: #666;
+  font-size: 0.85rem;
+  /* Ensure body cells also respect the width */
+  min-width: 60px;
+}
+
+.col-period.active {
+  color: var(--color-primary);
+  font-weight: 600;
+  background-color: #f0f7ff;
+}
+
+
+/* Section Common */
+.section {
+  padding: var(--spacing-lg) 0;
+}
+
+/* Overview Section */
+.overview-card {
+  background: var(--color-white);
+  padding: 2.5rem;
+  border-radius: var(--border-radius-md);
+  border: 1px solid var(--color-grey);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.overview-row {
+  display: flex;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #eee;
+  align-items: baseline;
+}
+
+.overview-row:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.overview-row:first-child {
+  padding-top: 0;
+}
+
+.overview-label {
+  flex: 0 0 140px;
+  font-weight: 700;
+  color: var(--color-primary);
+  font-size: 1.1rem;
+}
+
+.overview-content {
+  flex: 1;
+  font-size: 1.1rem;
+  color: var(--color-text-main);
+  font-weight: 500;
+}
+
+.overview-note {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--color-text-sub);
+}
+
+@media (max-width: 600px) {
+  .overview-card {
+    padding: 1.5rem;
+  }
+
+  .overview-row {
+    flex-direction: column;
+    padding: 1.2rem 0;
+  }
+
+  .overview-label {
+    margin-bottom: 0.5rem;
+    flex: auto;
+  }
+}
+
+/* Recruitment Details */
+.recruitment-section {
+  background-color: var(--color-bg-light);
+}
+
+.recruitment-info {
+  text-align: center;
+  margin-bottom: var(--spacing-md);
+}
+
+.info-text {
+  font-size: 1.1rem;
+}
+
+.sub-text {
+  display: block;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.table-container {
+  overflow-x: auto;
+  max-width: 800px;
+  background: white;
+  border-radius: var(--border-radius-md);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: var(--spacing-md);
+}
+
+.salary-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px;
+  /* Force scroll on very small screens */
+}
+
+.salary-table th {
+  background-color: #f1f3f5;
+  color: var(--color-text-main);
+  padding: 0.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.salary-table td {
+  padding: 0.5rem;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+.salary-table tr:last-child td {
+  border-bottom: none;
+}
+
+.role-badge {
+  font-weight: 700;
+}
+
+.role-badge.primary {
+  color: var(--color-primary);
+}
+
+.role-badge.secondary {
+  color: #555;
+}
+
+.amount {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  color: var(--color-black);
+  font-size: 1.1rem;
+}
+
+.info-box {
+  background: white;
+  padding: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: var(--border-radius-md);
+  border-left: 4px solid var(--color-primary);
+}
+
+.info-box h3 {
+  font-size: 1rem;
+  color: var(--color-text-sub);
+  margin-bottom: 0.5rem;
+}
+
+.highlight-date {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+/* CTA Section */
+.cta-section {
+  background-color: var(--color-white);
+  color: var(--color-text-main);
+  text-align: center;
+  border-top: 1px solid #eee;
+}
+
+.section-title.inverted {
+  color: var(--color-black);
+}
+
+.cta-desc {
+  margin-bottom: var(--spacing-md);
+  color: var(--color-text-sub);
+  font-size: 1.1rem;
+}
+
+.download-card {
+  display: inline-flex;
+  align-items: center;
+  background: white;
+  padding: 1.5rem 2rem;
+  border-radius: var(--border-radius-md);
+  color: var(--color-black);
+  text-align: left;
+  margin-bottom: var(--spacing-md);
+  max-width: 500px;
+  width: 100%;
+  transition: transform 0.2s;
+  border: 1px solid var(--color-grey);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  /* Soft shadow for white on white/light */
+}
+
+.download-card:hover {
+  transform: translateY(-3px);
+  background: #fff;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  border-color: var(--color-primary);
+}
+
+.icon-box {
+  font-size: 2.5rem;
+  margin-right: 1.5rem;
+}
+
+.file-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.file-name {
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+  font-size: 1rem;
+  word-break: break-all;
+}
+
+.file-action {
+  font-size: 0.85rem;
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.email-action p {
+  color: #888;
+  margin-bottom: 0.3rem;
+  font-size: 0.9rem;
+}
+
+.email-link {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  font-family: 'Inter', sans-serif;
+}
+
+.email-link:hover {
+  color: var(--color-text-main);
+  text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+  background-color: #111;
+  color: #666;
+  padding: 2rem 0;
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+.footer-text {
+  color: var(--color-accent);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  .download-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+  }
+
+  .icon-box {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+}
