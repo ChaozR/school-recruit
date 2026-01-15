@@ -24,13 +24,13 @@
       "name": "명정",
       "grade": "1~6",
       "classes": 24,
-      "students": 504,
+      "students": 455,
       "classSessions": 12,
       "totalSessions": 288,
       "dateRange": [
         "04.06~07.01"
       ],
-      "support": true,
+      "support": false,
       "schedule": {
         "mon": "1~4",
         "tue": "1~4",
