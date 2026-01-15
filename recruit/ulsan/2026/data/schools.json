@@ -641,7 +641,7 @@
         "04.07~07.15",
         "09.09~12.23"
       ],
-      "support": false,
+      "support": true,
       "schedule": {
         "mon": "-",
         "tue": "1~4",
