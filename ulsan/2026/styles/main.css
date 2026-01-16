@@ -221,6 +221,16 @@ ul {
   color: var(--color-text-main);
 }
 
+/* 시간표 테이블 */
+.school-list-content > .salary-table {
+  border: 2px solid #e1e4e8;
+  min-width: max-content;
+  width: fit-content;
+}
+.school-list-content > .salary-table td, .school-list-content > .salary-table th {
+  border: 2px solid #e1e4e8;
+}
+
 .placeholder-text {
   color: var(--color-text-sub);
   font-style: italic;
