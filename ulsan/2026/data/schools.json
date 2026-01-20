@@ -545,8 +545,8 @@
       "support": false,
       "schedule": {
         "mon": "-",
-        "tue": "5",
-        "wed": "-",
+        "tue": "-",
+        "wed": "5",
         "thu": "-",
         "fri": "-"
       }
