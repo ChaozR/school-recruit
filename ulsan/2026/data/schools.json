@@ -532,6 +532,26 @@
       }
     },
     {
+      "name": "삼동",
+      "grade": "3~6",
+      "classes": 1,
+      "students": 4,
+      "classSessions": 20,
+      "totalSessions": 20,
+      "dateRange": [
+        "04.08~06.17",
+        "09.02~11.11"
+      ],
+      "support": false,
+      "schedule": {
+        "mon": "-",
+        "tue": "5",
+        "wed": "-",
+        "thu": "-",
+        "fri": "-"
+      }
+    },
+    {
       "name": "서사",
       "grade": "1~6",
       "classes": 7,
