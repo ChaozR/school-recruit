@@ -30,7 +30,7 @@
       "dateRange": [
         "04.06~07.01"
       ],
-      "support": false,
+      "support": true,
       "schedule": {
         "mon": "1~4",
         "tue": "1~4",

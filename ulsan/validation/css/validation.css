@@ -1,0 +1,258 @@
+/* Validation Page Specific Styles */
+
+.validation-layout {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+@media (max-width: 768px) {
+  .validation-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* School Sidebar */
+.school-sidebar {
+  background: white;
+  border: 1px solid var(--color-grey);
+  border-radius: var(--border-radius-md);
+  padding: 1rem;
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
+  position: sticky;
+  top: 2rem;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+.sidebar-header h2 {
+  font-size: 1.1rem;
+  color: var(--color-primary);
+  margin: 0;
+}
+
+.school-group {
+  margin-bottom: 1.5rem;
+}
+
+.school-group-title {
+  font-size: 0.9rem;
+  background: #f1f3f5;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+  color: #555;
+  font-weight: 600;
+}
+
+/* Draggable School Item */
+.school-item {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0.6rem;
+  margin-bottom: 0.5rem;
+  cursor: grab;
+  transition: all 0.2s;
+  user-select: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.school-item:hover {
+  border-color: var(--color-primary);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.school-item:active {
+  cursor: grabbing;
+}
+
+.school-item .school-name {
+  font-weight: 600;
+}
+
+.school-item .school-info {
+  font-size: 0.75rem;
+  color: #666;
+}
+
+.school-item.is-dragging {
+  opacity: 0.5;
+  background: #f8f9fa;
+}
+
+/* Teacher Section */
+.teacher-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-header h2 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+/* Teacher Card */
+.teacher-card {
+  background: white;
+  border: 1px solid var(--color-grey);
+  border-radius: var(--border-radius-md);
+  padding: 1.5rem;
+  transition: all 0.2s;
+}
+
+.teacher-card.drag-over {
+  border: 2px dashed var(--color-primary);
+  background: var(--color-accent);
+}
+
+.teacher-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.teacher-name-input {
+  font-size: 1.2rem;
+  font-weight: 700;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 0.2rem 0.5rem;
+  color: var(--color-primary);
+  background: transparent;
+}
+
+.teacher-name-input:hover,
+.teacher-name-input:focus {
+  border-color: #ddd;
+  background: #fff;
+  outline: none;
+}
+
+.teacher-stats {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+  background: #f8f9fa;
+  padding: 0.8rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-label {
+  color: #666;
+  font-size: 0.8rem;
+  margin-bottom: 0.2rem;
+}
+
+.stat-value {
+  font-weight: 700;
+  color: #333;
+}
+
+/* Validations */
+.validation-result {
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  display: none;
+}
+
+.validation-result.error {
+  display: block;
+  background: #ffebee;
+  color: #c62828;
+  border: 1px solid #ffcdd2;
+}
+
+.validation-result.success {
+  display: none;
+  /* usually don't show success text, just no error */
+}
+
+/* Dropped Schools */
+.assigned-schools-list {
+  min-height: 80px;
+  border: 1px dashed #ddd;
+  border-radius: 8px;
+  padding: 0.5rem;
+  background: #fafafa;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.school-tag {
+  background: white;
+  border: 1px solid #e1e4e8;
+  border-radius: 4px;
+  padding: 0.4rem 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  position: relative;
+  padding-right: 2rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.school-tag .tag-name {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.school-tag .tag-info {
+  font-size: 0.75rem;
+  color: #666;
+}
+
+.remove-school-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: none;
+  border: none;
+  color: #999;
+  cursor: pointer;
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+.remove-school-btn:hover {
+  color: #f44336;
+}
+
+/* Empty State for Drop Zone */
+.assigned-schools-list:empty::before {
+  content: '학교를 여기에 드래그하세요';
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #aaa;
+  line-height: 80px;
+  pointer-events: none;
+}

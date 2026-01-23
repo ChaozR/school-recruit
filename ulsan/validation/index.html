@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>강사 배정 유효성 검사</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="../2026/styles/main.css">
+    <link rel="stylesheet" href="css/validation.css">
+</head>
+<body>
+    <header class="hero-section" style="padding: 2rem 0; min-height: auto;">
+        <div class="container">
+            <h1 class="hero-title" style="font-size: 1.8rem; margin-bottom: 0.5rem;">강사 배정 및 유효성 검사</h1>
+            <p class="hero-subtitle">학교를 드래그하여 강사에게 배정하세요.</p>
+        </div>
+    </header>
+
+    <main class="container" style="margin-top: 2rem; padding-bottom: 4rem;">
+        <div class="validation-layout">
+            <!-- Left: School List -->
+            <aside class="school-sidebar">
+                <div class="sidebar-header">
+                    <h2>배정 가능 학교</h2>
+                    <span id="unassigned-count" class="badge">0</span>
+                </div>
+                <div id="school-list-container" class="school-list-container">
+                    <!-- Schools grouped by region will be populated here -->
+                </div>
+            </aside>
+
+            <!-- Right: Teachers -->
+            <section class="teacher-section">
+                <div class="section-header">
+                    <h2>강사 목록</h2>
+                    <button id="add-teacher-btn" class="btn btn-primary">+ 강사 추가</button>
+                </div>
+                <div id="teacher-list" class="teacher-list">
+                    <!-- Teacher cards will be populated here -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="js/validation.js"></script>
+</body>
+</html>

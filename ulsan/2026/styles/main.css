@@ -222,12 +222,14 @@ ul {
 }
 
 /* 시간표 테이블 */
-.school-list-content > .salary-table {
+.school-list-content>.salary-table {
   border: 2px solid #e1e4e8;
   min-width: max-content;
   width: fit-content;
 }
-.school-list-content > .salary-table td, .school-list-content > .salary-table th {
+
+.school-list-content>.salary-table td,
+.school-list-content>.salary-table th {
   border: 2px solid #e1e4e8;
 }
 
@@ -637,7 +639,8 @@ ul {
   /* Soft shadow for white on white/light */
 }
 
-.download-card:hover, .contact-card:hover {
+.download-card:hover,
+.contact-card:hover {
   transform: translateY(-3px);
   background: #fff;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
@@ -719,5 +722,11 @@ ul {
   .icon-box {
     margin-right: 0;
     margin-bottom: 1rem;
+  }
+
+  .salary-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: auto;
   }
 }
